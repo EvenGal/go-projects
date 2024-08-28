@@ -40,3 +40,8 @@ jobs:
     - name: Test go-cli
       working-directory: ./go-cli
       run: go test -v ./...
+
+    - name: Build Docker image
+      shell: bash
+      run: |
+       docker build -t simple-web-server:latest ./simple-web-server
