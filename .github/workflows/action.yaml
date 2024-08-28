@@ -1,6 +1,4 @@
 name: "Learning Go CI"
-description: "Build Go programs"
-
 on:
   push:
     branches: [ main ]
