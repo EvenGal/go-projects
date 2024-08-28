@@ -1,0 +1,44 @@
+name: "Learning Go CI"
+description: "Build Go programs"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: 1.18
+    
+    - name: Install Go dependencies
+      if: 
+      run: |
+        cd ./example-project
+        go get .
+        cd ..
+        cd ./go-cli
+        go get .
+    
+    - name: Build application
+      run: |
+        cd ./example-project
+        go build -v ./..
+        cd ..
+        cd ./go-cli
+        go build -v ./..
+    
+    - name: Run tests
+      run: |
+        cd ./example-project
+        go test
+        cd ..
+        cd ./go-cli
