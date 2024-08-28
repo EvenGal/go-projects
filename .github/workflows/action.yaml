@@ -17,16 +17,16 @@ jobs:
       with:
         go-version: 1.18
     
-    - name: Install dependencies for example-project
-      working-directory: ./example-project
+    - name: Install dependencies for simple-web-server
+      working-directory: ./simple-web-server
       run: go get .
 
-    - name: Build example-project
-      working-directory: ./example-project
+    - name: Build simple-web-server
+      working-directory: ./simple-web-server
       run: go build -v .
 
-    - name: Test example-project
-      working-directory: ./example-project
+    - name: Test simple-web-server
+      working-directory: ./simple-web-server
       run: go test -v ./...
 
     - name: Install dependencies for go-cli
