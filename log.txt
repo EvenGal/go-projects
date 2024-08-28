@@ -1,7 +1,0 @@
-2024-08-28 14:32:21,456 INFO  [org.jboss.as] (ServerService Thread Pool -- 42) WFLYSRV0010: Starting services
-2024-08-28 14:32:22,789 DEBUG [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
-2024-08-28 14:32:23,123 WARN  [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0031: Operation 'deploy' is deprecated
-2024-08-28 14:32:24,987 ERROR [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0026: Failed to start service
-2024-08-28 14:32:25,321 CRITICAL [org.jboss.as.ejb3] (EJB default - 3) WFLYEJB0034: Critical failure in EJB component deployment
-2024-08-28 14:32:26,654 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2024-08-28 14:32:27,890 DEBUG [org.jboss.threads] (Thread-2) Thread started
